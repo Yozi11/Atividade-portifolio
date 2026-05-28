@@ -3,86 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Juan</title>
+    <title>Juan | Desenvolvedor Backend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="container navbar">
-            <h1>Juan<span>.dev</span></h1>
+            <h1 class="logo">Juan<span>.dev</span></h1>
             <nav>
-                <a href="#sobre">Sobre</a>
-                <a href="#habilidades">Habilidades</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#conhecimentos">Conhecimentos</a>
                 <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
             </nav>
+            <div class="social-header">
+                <a href="https://github.com/seu-usuario" target="_blank"><i class="devicon-github-original"></i></a>
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        
-        <section id="sobre" class="card">
-            <h2>Quem Sou Eu</h2>
-            <p>Olá! Meu nome é <strong>Juan</strong>. Sou um estudante de tecnologia focado em construir soluções eficientes e lógicas. Meu principal objetivo profissional é me tornar um <strong>Desenvolvedor Backend</strong>, criando arquiteturas sólidas, integrando bancos de dados e garantindo que os sistemas rodem perfeitamente por trás dos panos.</p>
+    <main>
+        <section id="home" class="container hero hidden">
+            <div class="hero-text">
+                <p class="saudacao">HELLO WORLD 👋</p>
+                <h1>Eu sou Juan,</h1>
+                <h2 class="typing-effect">Desenvolvedor <span id="typing-text"></span><span class="cursor">|</span></h2>
+                <a href="#contato" class="btn-primary">MEU CONTATO</a>
+            </div>
         </section>
 
-     <section id="habilidades" class="card">
-    <h2>Minhas Habilidades</h2>
-    <div class="skills-grid">
-        <div class="skill-item">
-            <span class="icon">🐍</span> <span>Python</span>
-        </div>
-        <div class="skill-item">
-            <span class="icon">🗄️</span> <span>Banco de Dados</span>
-        </div>
-        <div class="skill-item">
-            <span class="icon">🟨</span> <span>JavaScript</span>
-        </div>
-        <div class="skill-item">
-            <span class="icon">🌐</span> <span>HTML5</span>
-        </div>
-        <div class="skill-item">
-            <span class="icon">🎨</span> <span>CSS3</span>
-        </div>
-        <div class="skill-item">
-            <span class="icon">⚛️</span> <span>React</span>
-        </div>
-    </div>
-</section>
+        <section id="sobre" class="container hidden">
+            <div class="sobre-content">
+                <div class="sobre-img">
+                    <img src="sua-foto.jpg" alt="Foto do Juan">
+                </div>
+                <div class="sobre-texto">
+                    <h2 class="section-title">Sobre <span>mim</span></h2>
+                    <p>Olá! Meu nome é <strong>Juan</strong>. Sou um estudante de tecnologia focado em construir soluções eficientes e lógicas. Meu principal objetivo profissional é me tornar um <strong>Desenvolvedor Backend</strong>.</p>
+                    <p>Gosto muito desse mundo da tecnologia, criando arquiteturas sólidas, integrando bancos de dados e garantindo que os sistemas rodem perfeitamente por trás dos panos. Sempre estou aprendendo coisas novas para dar a melhor experiência aos usuários.</p>
+                </div>
+            </div>
+        </section>
 
-        <section id="projetos" class="card">
-            <h2>Meus Projetos</h2>
-            <p>Abaixo estão alguns dos projetos práticos que desenvolvi durante meus estudos:</p>
+        <section id="conhecimentos" class="container hidden">
+            <h2 class="section-title section-center">Meus <span>Conhecimentos</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="devicon-python-plain colored"></i>
+                    <h3>Python</h3>
+                    <p>Linguagem poderosa para criação de APIs, automação e lógica de backend.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-azuresqldatabase-plain colored"></i>
+                    <h3>Banco de Dados</h3>
+                    <p>Modelagem e consultas otimizadas para armazenar os dados com segurança.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h3>JavaScript</h3>
+                    <p>Linguagem essencial para adicionar interatividade às aplicações web.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-react-original colored"></i>
+                    <h3>React</h3>
+                    <p>Biblioteca para construir interfaces de usuário interativas e dinâmicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="container hidden">
+            <h2 class="section-title section-center">Meus <span>Projetos</span></h2>
             <div class="projects-grid">
-                <div class="project-item">
-                    <h3>Projeto 01 - API Backend</h3>
-                    <p>Desenvolvimento de uma API REST utilizando Python para gerenciamento de dados.</p>
-                    <a href="https://github.com/seu-usuario" target="_blank" class="btn">Ver Repositório</a>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="projeto1.jpg" alt="Print do Projeto 1">
+                    </div>
+                    <div class="project-info">
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                        </div>
+                        <h3>API de Gerenciamento</h3>
+                        <p>Sistema backend para gerenciamento de usuários e produtos com autenticação segura.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="btn-outline"><i class="devicon-github-original"></i> Repositório</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-item">
-                    <h3>Projeto 02 - Aplicação Web</h3>
-                    <p>Interface responsiva e dinâmica criada com React e integração de banco de dados.</p>
-                    <a href="https://github.com/seu-usuario" target="_blank" class="btn">Ver Repositório</a>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="projeto2.jpg" alt="Print do Projeto 2">
+                    </div>
+                    <div class="project-info">
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h3>Aplicação Web Dinâmica</h3>
+                        <p>Interface moderna e responsiva consumindo dados em tempo real de uma API REST.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="btn-outline"><i class="devicon-github-original"></i> Repositório</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
-        <section id="contato" class="card">
-            <h2>Contato</h2>
-            <p>Se você gostou do meu perfil ou quer trocar uma ideia sobre desenvolvimento, entre em contato comigo por qualquer um dos canais abaixo:</p>
+        <section id="contato" class="container hidden">
+            <h2 class="section-title section-center">Vamos <span>conversar?</span></h2>
             <div class="contact-links">
-                <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="contact-btn linkedin">LinkedIn</a>
-                <a href="https://github.com/seu-usuario" target="_blank" class="contact-btn github">GitHub</a>
-                <a href="mailto:seu-email@gmail.com" class="contact-btn email">Gmail</a>
+                <a href="mailto:seu-email@gmail.com" class="contact-btn"><i class="devicon-google-plain"></i> Gmail</a>
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="contact-btn"><i class="devicon-linkedin-plain"></i> LinkedIn</a>
+                <a href="https://github.com/seu-usuario" target="_blank" class="contact-btn"><i class="devicon-github-original"></i> GitHub</a>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> - Desenvolvido com 💻 por Juan</p>
-        <button id="theme-toggle">Trocar Tema 🌓</button>
+        <p>&copy; 2026 - Desenvolvido por Juan</p>
     </footer>
 
     <script src="script.js"></script>

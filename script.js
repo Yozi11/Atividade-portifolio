@@ -1,9 +1,28 @@
-// Adiciona o ano atual dinamicamente no rodapé
-document.getElementById('year').textContent = new Date().getFullYear();
+// Efeito de Digitação
+const textElement = document.getElementById("typing-text");
+const textToType = "Backend.";
+let index = 0;
 
-// Função do Botão de Alternar o Tema (Dark Mode / Light Mode)
-const themeToggle = document.getElementById('theme-toggle');
+function type() {
+    if (index < textToType.length) {
+        textElement.innerHTML += textToType.charAt(index);
+        index++;
+        setTimeout(type, 150);
+    }
+}
 
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+window.onload = () => {
+    setTimeout(type, 500);
+};
+
+// Animação de Scroll (Revelar elementos)
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
 });
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
