@@ -4,129 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan | Desenvolvedor Backend</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="glass-header">
         <div class="container navbar">
-            <h1 class="logo">Juan<span>.dev</span></h1>
+            <h1 class="logo">Juan<span>.</span></h1>
             <nav>
-                <a href="#sobre">Sobre mim</a>
-                <a href="#conhecimentos">Conhecimentos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#conhecimentos">Skills</a>
                 <a href="#projetos">Projetos</a>
             </nav>
-            <div class="social-header">
-                <a href="https://github.com/seu-usuario" target="_blank"><i class="devicon-github-original"></i></a>
-                <a href="https://linkedin.com/in/seu-usuario" target="_blank"><i class="devicon-linkedin-plain"></i></a>
-            </div>
+            <a href="#contato" class="btn-sm">Falar comigo</a>
         </div>
     </header>
 
     <main>
         <section id="home" class="container hero hidden">
-            <div class="hero-text">
-                <p class="saudacao">HELLO WORLD 👋</p>
-                <h1>Eu sou Juan,</h1>
-                <h2 class="typing-effect">Desenvolvedor <span id="typing-text"></span><span class="cursor">|</span></h2>
-                <a href="#contato" class="btn-primary">MEU CONTATO</a>
+            <div class="hero-content">
+                <span class="badge">Disponível para oportunidades</span>
+                <h1>Construindo o futuro no <br><span class="gradient-text">Backend</span></h1>
+                <p class="subtitle">Olá, sou o Juan. Desenvolvo arquiteturas escaláveis, seguras e eficientes por trás das interfaces.</p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="https://github.com/Yozi11" target="_blank" class="btn-secondary"><i class="devicon-github-original"></i> GitHub</a>
+                </div>
             </div>
         </section>
 
         <section id="sobre" class="container hidden">
-            <div class="sobre-content">
-                <div class="sobre-img">
-                    <img src="sua-foto.jpg" alt="Foto do Juan">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre mim.</h2>
+                    <p>Sou um estudante de tecnologia focado em resolver problemas complexos com soluções lógicas e eficientes. Meu foco é o <strong>Desenvolvimento Backend</strong>.</p>
+                    <p>Tenho paixão por projetar bancos de dados robustos, criar APIs rápidas e garantir que a engrenagem do software funcione perfeitamente. Acredito que um código limpo e bem estruturado é a base de qualquer grande produto.</p>
                 </div>
-                <div class="sobre-texto">
-                    <h2 class="section-title">Sobre <span>mim</span></h2>
-                    <p>Olá! Meu nome é <strong>Juan</strong>. Sou um estudante de tecnologia focado em construir soluções eficientes e lógicas. Meu principal objetivo profissional é me tornar um <strong>Desenvolvedor Backend</strong>.</p>
-                    <p>Gosto muito desse mundo da tecnologia, criando arquiteturas sólidas, integrando bancos de dados e garantindo que os sistemas rodem perfeitamente por trás dos panos. Sempre estou aprendendo coisas novas para dar a melhor experiência aos usuários.</p>
+                <div class="about-image-wrapper">
+                    <img src="sua-foto.jpg" alt="Foto do Juan" class="about-img">
+                    <div class="glow-effect"></div>
                 </div>
             </div>
         </section>
 
         <section id="conhecimentos" class="container hidden">
-            <h2 class="section-title section-center">Meus <span>Conhecimentos</span></h2>
+            <h2 class="section-title text-center">Tecnologias.</h2>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="devicon-python-plain colored"></i>
-                    <h3>Python</h3>
-                    <p>Linguagem poderosa para criação de APIs, automação e lógica de backend.</p>
+                <div class="skill-item">
+                    <i class="devicon-python-plain"></i>
+                    <span>Python</span>
                 </div>
-                <div class="skill-card">
-                    <i class="devicon-azuresqldatabase-plain colored"></i>
-                    <h3>Banco de Dados</h3>
-                    <p>Modelagem e consultas otimizadas para armazenar os dados com segurança.</p>
+                <div class="skill-item">
+                    <i class="devicon-azuresqldatabase-plain"></i>
+                    <span>Databases</span>
                 </div>
-                <div class="skill-card">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <h3>JavaScript</h3>
-                    <p>Linguagem essencial para adicionar interatividade às aplicações web.</p>
+                <div class="skill-item">
+                    <i class="devicon-javascript-plain"></i>
+                    <span>JavaScript</span>
                 </div>
-                <div class="skill-card">
-                    <i class="devicon-react-original colored"></i>
-                    <h3>React</h3>
-                    <p>Biblioteca para construir interfaces de usuário interativas e dinâmicas.</p>
+                <div class="skill-item">
+                    <i class="devicon-react-original"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-item">
+                    <i class="devicon-html5-plain"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <i class="devicon-css3-plain"></i>
+                    <span>CSS3</span>
                 </div>
             </div>
         </section>
 
         <section id="projetos" class="container hidden">
-            <h2 class="section-title section-center">Meus <span>Projetos</span></h2>
+            <h2 class="section-title text-center">Trabalhos recentes.</h2>
             <div class="projects-grid">
                 
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="projeto1.jpg" alt="Print do Projeto 1">
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-tags">
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="projeto1.jpg" alt="API Project">
+                        <div class="floating-tags">
                             <span>Python</span>
                             <span>SQL</span>
                         </div>
-                        <h3>API de Gerenciamento</h3>
-                        <p>Sistema backend para gerenciamento de usuários e produtos com autenticação segura.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/" target="_blank" class="btn-outline"><i class="devicon-github-original"></i> Repositório</a>
-                        </div>
                     </div>
-                </div>
+                    <div class="project-content">
+                        <h3>API de Gerenciamento RESTful</h3>
+                        <p>Arquitetura backend desenvolvida para gerenciar fluxos de dados com autenticação e alta performance.</p>
+                        <a href="https://github.com/Yozi11" target="_blank" class="project-link">Ver Código ➔</a>
+                    </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="projeto2.jpg" alt="Print do Projeto 2">
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-tags">
-                            <span>React</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <h3>Aplicação Web Dinâmica</h3>
-                        <p>Interface moderna e responsiva consumindo dados em tempo real de uma API REST.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/" target="_blank" class="btn-outline"><i class="devicon-github-original"></i> Repositório</a>
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="projeto2.jpg" alt="Web App">
+                        <div class="floating-tags">
+                            <span>html</span>
+                            <span>Node</span>
+                            <span>css</span>
                         </div>
                     </div>
-                </div>
+                    <div class="project-content">
+                        <h3>Site sly cooper</h3>
+                        <p>site sly cooper basico com Html css JavaScript</p>
+                        <a href="https://github.com/Yozi11" target="_blank" class="project-link">Ver Código ➔</a>
+                    </div>
+                </article>
 
             </div>
         </section>
 
-        <section id="contato" class="container hidden">
-            <h2 class="section-title section-center">Vamos <span>conversar?</span></h2>
-            <div class="contact-links">
-                <a href="mailto:seu-email@gmail.com" class="contact-btn"><i class="devicon-google-plain"></i> Gmail</a>
-                <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="contact-btn"><i class="devicon-linkedin-plain"></i> LinkedIn</a>
-                <a href="https://github.com/seu-usuario" target="_blank" class="contact-btn"><i class="devicon-github-original"></i> GitHub</a>
+        <section id="contato" class="container hidden cta-section">
+            <h2>Vamos construir algo juntos?</h2>
+            <p>Sempre aberto a novos desafios e conexões profissionais.</p>
+            <div class="cta-links">
+                <a href="mailto:seu-email@gmail.com" class="btn-primary">Enviar Email</a>
+                <a href="https://www.linkedin.com/in/juan-santos-bispo-1552b4381/" target="_blank" class="btn-secondary">LinkedIn</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Desenvolvido por Juan</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Juan. Todos os direitos reservados.</p>
+            <div class="footer-social">
+                <a href="#"><i class="devicon-github-original"></i></a>
+                <a href="#"><i class="devicon-linkedin-plain"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
